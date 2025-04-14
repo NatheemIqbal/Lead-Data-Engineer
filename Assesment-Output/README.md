@@ -1,7 +1,7 @@
 Please read below points for Data Processig/KPI/Deployment/Triggering/Visualization 
 
-Data Processing:
->>>>>>>>>>>>>>>>
+**Data Processing:**
+
 
 1.The dataset is in csv format thus data would be in string datatype by default, Have cleaned and casted columns that are mostly date,int and double datatype for further processing
 
@@ -17,8 +17,8 @@ Data Processing:
 5.Each cell in notebook display the sample output for easy reference of each dataframes
 
 
-KPI:
->>>>
+**KPI:**
+
 1. All the KPI are performed using processed dataframes
    
 2.Average salary per agency for last 2 years - this KPI return  blank result because the latest year in the dataset is   2019.
@@ -26,20 +26,20 @@ KPI:
 3 Highes paid skills: For this KPI I've considered key words from the column "Preferred skills" and used UDF to extract the same for calculating highest paid skills API
 
 
-Deployment:
->>>>>>>>>>
+**Deployment:**
+
 Method 1: Batch deployment using Airflow(We need to package the code in one single file with the extension .py and call the same by creating DAG's) this Airflow can be hosted in AWS EC2 
 
 Method 2: Create a SPark job and submit with "spark=submit" command by writing the .py file in AWS S3(this is for AWS) for Azure cloud we can store in ADSL GEN 2 storage service
 
 
-Triggering:
->>>>>>>>>>>
+**Triggering:**
+
 Manual trigger, schedule trigger,File based trigger...these are the types of trigger we can drive for the job to execute.
 One can also use ADF (Azure Data Factory) as well to schedule the data pipelines,Cloud to cloud it depends which tool you use for triggering/orchestration
 
-Visualization:
->>>>>>>>>>>>
+**Visualization:**
+
 We can use python libraries for visualizing the data, However we can also use Tableau or Power BI for building dashboards on busiess insights
 
 
