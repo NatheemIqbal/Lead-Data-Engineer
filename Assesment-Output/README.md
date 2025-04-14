@@ -20,7 +20,9 @@ Data Processing:
 KPI:
 >>>>
 1. All the KPI are performed using processed dataframes
+   
 2.Average salary per agency for last 2 years - this KPI return  blank result because the latest year in the dataset is   2019.
+
 3 Highes paid skills: For this KPI I've considered key words from the column "Preferred skills" and used UDF to extract the same for calculating highest paid skills API
 
 
